@@ -1,0 +1,86 @@
+::selection {
+  /* background-color: #ffa; */
+  background-color: #bfb1ee;
+}
+body {
+  background-color: #3b3355;
+  overflow-x: hidden;
+}
+
+/* buttons */
+
+.btn {
+  background-color: #3b3355;
+  transition: 0.1s ease-in-out all;
+}
+.btn:hover {
+  background-color: #483e69;
+}
+.btn-link {
+  text-decoration: none;
+  color: cornsilk;
+}
+.btn-link:hover {
+  text-decoration: none;
+  color: cornsilk;
+}
+
+/* links */
+.links {
+  color: cornsilk;
+  text-decoration: none;
+  border-radius: 0.2em;
+  border-bottom: cornsilk 0.125em solid;
+  /* border-bottom: #ea215a 0.3em solid; */
+  transition: 0.3s ease-in all;
+}
+.links:hover {
+  border-radius: 0.2em;
+  text-decoration: none;
+  color: #ea215a;
+  background-color: cornsilk;
+  /* background-color: #ea215a; */
+}
+
+/* editorjs div container */
+.left-grid,
+.right-grid {
+  min-height: 90vh;
+  max-height: 90vh;
+  width: 100%;
+}
+
+.left-grid {
+  background: crimson;
+}
+.right-grid {
+  scrollbar-width: none;
+  background: cornsilk;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.cdx-block {
+  background-color: crimson;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1px;
+}
+.ce-toolbar__plus {
+  margin-left: 5px;
+  color: black;
+}
+.ce-toolbox__button {
+  color: #fff;
+}
+
+/* MediaQueries */
+
+/* for left and right grid */
+@media screen and(min-width:768px) {
+  .left-grid,
+  .right-grid {
+    height: 100vh;
+  }
+}

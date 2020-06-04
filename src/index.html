@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <title>Pustak: Editor Magnificate</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Pustak</a>
+      <div>
+        <button type="button" class="btn btn-light">
+          <a href="https://github.com/BlankRiser" class="btn-link">Github</a>
+        </button>
+      </div>
+    </nav>
+    <!-- Grid -->
+    <div class="row no-gutters">
+      <div class="col-md-6 no-gutters">
+        <div class="left-grid">
+          <br />
+          <section style="text-align: center;">
+            <h3>
+              <strong>Pustak</strong> is a block based text editor, developed by
+            </h3>
+            <h3>
+              <a
+                class="links"
+                target="_blank"
+                href="https://github.com/BlankRiser"
+                >Ram Shankar Choudhary</a
+              >
+            </h3>
+          </section>
+          <br />
+          <section style="padding-left: 20px;">
+            <h4>What's to be implemented</h4>
+            <form style="color: blanchedalmond;">
+              <input type="checkbox" checked="true" /> Headers(H1 to H6) <br />
+              <input type="checkbox" checked="true" /> Link <br />
+              <input type="checkbox" checked="true" /> List (Ordered) <br />
+              <input type="checkbox" checked="true" /> Table <br />
+              <input type="checkbox" checked="true" /> Code (Inline too) <br />
+              <input type="checkbox" checked="true" /> Checklist <br />
+              <input type="checkbox" /> Images <br />
+              <input type="checkbox" /> Content Embed <br />
+              <input type="checkbox" /> Save content to PC or cloud(Gdrive,
+              OneDrive, Dropbox) <br />
+              <input type="checkbox" /> Make it mobile friendly<br />
+              <input type="checkbox" /> Port to desktop<br />
+            </form>
+          </section>
+        </div>
+      </div>
+      <div class="col-md-6 no-gutters">
+        <div class="right-grid">
+          <h2 style="text-align: center; margin: 2rem;">
+            Press <kbd>tab</kbd> key for more info
+          </h2>
+
+          <div
+            id="editorjs"
+            class="editorjs"
+            aria-placeholder="Press tab for more options"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/bundles/imageHandler.js"></script>
+    <script src="js/bundles/checklistHandler.js"></script>
+    <script src="js/bundles/inlineCodeHandler.js"></script>
+  </body>
+</html>

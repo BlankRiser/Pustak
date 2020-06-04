@@ -1,0 +1,33 @@
+{
+  "name": "pustak",
+  "version": "1.0.0",
+  "description": "A text editor based on editor.js",
+  "main": "src/electron.js",
+  "scripts": {
+    "develop": "parcel -p 3000 src/index.html",
+    "build": "parcel build src/index.html",
+    "start": "concurrently \"cross-env BROWSER=none npm develop\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@editorjs/checklist": "^1.1.0",
+    "@editorjs/code": "^2.4.1",
+    "@editorjs/delimiter": "^1.1.0",
+    "@editorjs/editorjs": "^2.17.0",
+    "@editorjs/embed": "^2.3.1",
+    "@editorjs/header": "^2.4.1",
+    "@editorjs/inline-code": "^1.3.1",
+    "@editorjs/list": "^1.4.0",
+    "@editorjs/marker": "^1.2.2",
+    "@editorjs/paragraph": "^2.6.1",
+    "@editorjs/table": "^1.2.2",
+    "electron": "^9.0.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@editorjs/image": "^2.3.4",
+    "@editorjs/link": "^2.1.3",
+    "@editorjs/simple-image": "^1.3.3"
+  }
+}
